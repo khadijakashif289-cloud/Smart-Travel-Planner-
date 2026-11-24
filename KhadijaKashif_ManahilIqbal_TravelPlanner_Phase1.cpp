@@ -47,12 +47,12 @@ int main()
             accommodationCost = travellers * nights * accommodationRate;
 
             totaltripCost = calculateTripCost(travellers, nights,
-                accommodationRate,
-                transportCost, activityCost, foodRate);
+                accommodationRate,foodRate,
+                transportCost, activityCost, foodCost);
 
             checkBudget(totaltripCost, budget);
 
-            displayCostBreakdown(accommodationCost, transportCost,
+            displayCostBreakdown(accommodationCost, transportCost
                 activityCost, totaltripCost,destination,foodRate);
         }
         else if (choice == 2)
